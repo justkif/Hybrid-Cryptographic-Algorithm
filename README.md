@@ -155,6 +155,16 @@ The main code is in [Main Code](https://github.com/justkif/Hybrid-Cryptographic-
 
 ## Evaluation
 
+Comparing the main solution and RSA algorithm, the average runtime after `10 tests` each:
+   - The main solution: 0.0679798 seconds.
+   - The RSA algorithm: 0.0378548 seconds.
+
+The main solution is approximately `1.8 times` slower than the traditional RSA approach. However, this additional runtime results in significantly stronger security, especially quantum resistance, which RSA lacks.
+
+It's also worth noting that the `SHA-256` hashing step in the main solution was included only for demonstration purposes. In real-world applications where the hashed key is not explicitly required, this step could be omitted—resulting in an even faster execution time.
+
+Given that even with hashing the total runtime remains under `0.07 seconds`, the performance trade-off is minimal and acceptable, particularly for systems prioritizing future-proof, quantum-safe security.
+
 ## Acknowledgements
 
 I would like to express my sincere thanks to **Lê Hồng Vũ** and **Lý Gia Bình** for their dedicated work on the [Problem Analysis](#problem-analysis) and [Solution Design](#solution-design) of the project.
