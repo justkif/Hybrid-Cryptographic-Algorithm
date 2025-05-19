@@ -145,6 +145,14 @@ The main code is in [Main Code](https://github.com/justkif/Hybrid-Cryptographic-
 
 ## Execute RSA Code
 
+1. Open the **x64 Native Tools Command Prompt for VS 2022**.
+2. **Navigate to the extracted directory of this repository** and run the following commands:
+   ```
+   cd rsa
+   cl .\rsa.cpp /I ..\libs\include /link /LIBPATH:..\libs\lib libssl.lib libcrypto.lib
+   .\rsa
+   ```
+
 ## Evaluation
 
 ## Acknowledgements
