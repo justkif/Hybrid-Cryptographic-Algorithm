@@ -46,14 +46,14 @@ Implementation
 
 ## Setup
 
-This section is optional. If you prefer not to manually install the libraries, you can skip ahead to [Execute Main Code](#execute-main-code). However, a C++ compiler is still required. You can use `cl`, which involves installing [Visual Studio 2022](#1-visual-studio-2022) and setting up the environment as described in [Set Up Windows Environment for `cl.exe`](#6-set-up-windows-environment-for-clexe). Alternatively, `g++` or `clang++` will work just fine.
+This section is optional. If you prefer not to manually install the libraries, you can skip ahead to [Execute Main Code](#execute-main-code). However, a C++ compiler is still required. You can use `cl` by installing [Visual Studio 2022](#1-visual-studio-2022), excluding **C++ CMake tools for Windows** and **Windows 10 SDK**, and setting up the environment as described in [Set Up Windows Environment for `cl.exe`](#6-set-up-windows-environment-for-clexe). Alternatively, `g++` or `clang++` will work just fine.
 
 ### 1. Visual Studio 2022
 Visual Studio 2022 will be used to compile the code and to build libraries.
 
 1. Download Visual Studio 2022 from the official site: [Visual Studio Download](https://visualstudio.microsoft.com/).
-2. During installation, select the following components:
-   - **Desktop development with C++**.
+2. During installation, select **Desktop development with C++** with the following components:
+   - **MSVC v143 - VS 2022 C++ x64/86 build tools** (or the latest available version).
    - **C++ CMake tools for Windows**.
    - **Windows 10 SDK** (or the latest available version).
 3. Finish the installation by following the on-screen instructions.
