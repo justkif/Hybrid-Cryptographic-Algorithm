@@ -133,6 +133,16 @@ OQS library will be used in the project, compiled using the Visual Studio 2022 e
 
 ## Execute Main Code
 
+The main code is in [Main Code](https://github.com/justkif/Hybrid-Cryptographic-Algorithm/blob/main/main/code.cpp).
+
+1. Open the **x64 Native Tools Command Prompt for VS 2022**.
+2. **Navigate to the extracted directory of this repository** and run the following commands:
+   ```
+   cd main
+   cl /I ..\libs\include /EHsc .\code.cpp libssl.lib libcrypto.lib ws2_32.lib crypt32.lib user32.lib oqs.lib /link /LIBPATH:..\libs\lib Advapi32.lib
+   .\code
+   ```
+
 ## Execute RSA Code
 
 ## Evaluation
